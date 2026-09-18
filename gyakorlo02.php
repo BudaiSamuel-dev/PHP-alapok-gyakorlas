@@ -13,8 +13,11 @@
         $a = 5.6;
         $b = 7.22;
         $c = 9.09;
-        $s = $a + $b + $c;
+        $s = ($a + $b + $c)/2;
         $t = sqrt($s*($s-$a)*($s-$b)*($s-$c));
+
+        number_format($t, 3);
+        echo "<p>A háromszög területe: $t</p>";
 
         $tanuloKati = "Kati";
         $tanuloTibor = "Tibor";
