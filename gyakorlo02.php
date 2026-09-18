@@ -53,9 +53,9 @@
         }
         echo "</table>";
 
-        $legkisebbOldalszamuKonyv = $konyvek[0];
+        $legkisebbOldalszamuKonyv = null;
         foreach ($konyvek as $konyv) {
-            if ($konyv['oldalszam'] < $legkisebbOldalszamuKonyv['oldalszam']) {
+            if ($legkisebbOldalszamuKonyv == null || $konyv['oldalszam'] < $legkisebbOldalszamuKonyv['oldalszam']) {
                 $legkisebbOldalszamuKonyv = $konyv;
             }
         }
